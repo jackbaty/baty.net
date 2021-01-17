@@ -1,7 +1,6 @@
 +++
 categories = ["Blogging"]
 date = 2021-01-17T21:08:00Z
-draft = true
 lastmod = ""
 tags = []
 title = "Managing content with Forestry.io"
