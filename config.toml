@@ -408,7 +408,7 @@ theme = "github.com/sunt-programator/CodeIT"
         outlined = false
       #  Commento comment config
       [params.page.comment.commento]
-        enable = false
+        enable = true
       #  Utterances comment config
       [params.page.comment.utterances]
         enable = false
