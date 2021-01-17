@@ -1,0 +1,44 @@
+// ==============================
+// Custom style
+// ==============================
+
+.content {
+  margin-top: 2em;
+}
+
+.single .post-meta {
+  margin-top: 15px;
+} 
+
+.single .content figure {
+  margin-top: 2.0em;
+}
+
+.single .content figcaption h4, .single .content figcaption p {
+  font-size: .75em;
+  color: $global-font-secondary-color;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.single .content p {
+  margin-top: 1rem;
+}
+
+article.single.summary {
+  margin-bottom: 3em;
+}
+
+.single .single-subtitle {
+  color: $global-font-secondary-color;
+  font-style: normal;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+#archive-notice {
+  width:auto;
+  padding: 30px 50px;
+  margin: 20px;
+  border: 2px solid grey;
+}
+
