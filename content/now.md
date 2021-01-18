@@ -2,7 +2,7 @@
 date: "2019-07-05T08:20:00-04:00"
 draft: false
 title: Things I'm doing now
-comments: false
+comment: false
 ---
 
 A few of the things I’m doing as of  **Monday, January 18, 2021**
