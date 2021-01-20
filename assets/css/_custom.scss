@@ -14,6 +14,11 @@
   margin-top: 2.0em;
 }
 
+.single .content a {
+  text-decoration: underline;
+}
+
+
 .single .content figcaption h4, .single .content figcaption p {
   font-size: .75em;
   color: $global-font-secondary-color;
