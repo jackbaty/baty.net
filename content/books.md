@@ -1,10 +1,8 @@
 ---
-author: Jack
 date: 2015-02-04T02:09:15+00:00
 title: Books
-type: page
-sidebar: true
 toc: false
+comment: false
 ---
 
 # Books I've Read
