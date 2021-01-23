@@ -1,6 +1,7 @@
 ---
 title: "Some of Jack Baty's Stuff"
 date:  2021-01-23T9:40-04:00
+comment: false
 ---
 
 Here you'll find links to some of my other stuff. By "stuff" I mean pages, sites, photos, info, whatever doesn't fit into the normal flow.

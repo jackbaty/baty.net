@@ -1,9 +1,9 @@
 ---
 date: "2019-07-04T11:18:00-04:00"
-draft: false
 title: "About Jack Baty"
 meta: false
 dropCap: false
+comment: false
 ---
 
 
