@@ -413,6 +413,58 @@ I also try to keep my
 1. **The Collapsing Empire** by John Scalzi (2018-12-01)
 1. **The Consuming Fire** by John Scalzi (2018-12-07)
 1. **Killers of the Flower Moon: The Osage Murders and the Birth of the FBI** by David Grann (2018-12-25)
+1. **How to Invent Everything** by Ryan North (2018-12-29)
+1. **Old Man's War** by John Scalzi (2019-01-02)
+1. **Travels with Epicurus** by Daniel Klein (2019-01-06)
+1. **The Ghost Brigades** by John Scalzi (2019-01-08)
+1. **How to Fix the Future** by Andrew Keen (2019-01-09) | ★★★
+1. **Mastering Emacs** by Mickey Petersen (2019-01-20) | ★★★★
+1. **Killing Floor (Jack Reacher, #1)** by Lee Child (2019-01-25) | ★★★★
+1. **Artificial Condition (The Murderbot Diaries, #2)** by Martha Wells (2019-01-20) | ★★★★
+1. **Rogue Protocol (The Murderbot Diaries, #3)** by Martha Wells (2019-01-20) | ★★★★
+1. **Digital Minimalism: Choosing a Focused Life in a Noisy World** by Cal Newport (2019-02-16) | ★★★★
+1. **Team Human** by Douglas Rushkoff (2019-02-17) | ★★★
+1. **Exit Strategy (The Murderbot Diaries, #4)** by Martha Wells (2019-02-17) | ★★★★
+1. **The Three-Body Problem (Remembrance of Earth’s Past, #1)** by Cixin Liu (2019-03-03) | ★★★★★
+1. **The Dark Forest (Remembrance of Earth’s Past, #2)** by Cixin Liu (2019-03-25) | ★★★★
+1. **Atomic Habits** by James Clear (2019-04-09) | ★★★
+1. **Glut: Mastering Information through the Ages** by Alex Wright (2019-04-14) | ★★★
+1. **Kafka on the Shore** by Haruki Murakami (2019-05-14) | ★★★★★
+1. **The Library Book** by Susan Orlean (2019-05-29) | ★★★★
+1. **The Art of Noticing** by Rob Walker (2019-06-04) | ★★★
+1. **NOS4A2** by Joe Hill (2019-06-27) | ★★
+1. **Fall; or, Dodge in Hell** by Neal Stephenson | ★★★
+1. **Space Opera** by Catherynne M. Valente (2019-07-20) | ★★
+1. **Armada** by Ernest Cline (2019-07-25) | ★★★
+1. **Road to Seeing** by Dan Winters (2019-08-04) | ★★★★★
+1. **We Are Legion (We Are Bob)** by Dennis E. Taylor (2019-08-13) | ★★★
+1. **Gregory Heisler: 50 Portraits** by Gregory Heisler (2019-08-13) | ★★★★★
+1. **Divine Misfortune** by A. Lee Martinez (2019-08-27) | ★★★★
+1. **Instant: The Story of Polaroid** by Christopher Bonanos (2019-09-08) | ★★★★
+1. **Slaughterhouse-Five** by Kurt Vonnegut Jr (2019-09-18) | ★★★★
+1. **Daisy Jones & The Six** by Taylor Jenkins Reid (2019-09-27) | ★★★
+1. **The Gone World** by Tom Sweterlitsch (2019-10-05) | ★★★
+1. **Gil's All Fright Diner** by A. Lee Martinez (2019-10-10) | ★★★★
+1. **What Should I Do with My Life?** by Po Bronson (2019-11-07) | ★★★
+1. **Ancillary Justice (Imperial Radch #1)** by Ann Leckie (2019-11-21) | ★★
+1. **The Art of Frugal Hedonism** by Annie Raser-Rowland (2019-11-29) | ★★★
+1. **A Gentle Madness: Bibliophiles, Bibliomanes, and the Eternal Passion for Books** by Nicholas A. Basbanes (2020-01-05) | ★★★★
+1. **How to Do Nothing** by Jenny Odell (2020-02-05) | ★★
+1. **The Instructions** by Adam Levin (2020-02-15) | ★★★★
+1. **The Wisdom of Insecurity** by Alan W. Watts (2020-03-06) | ★★
+1. **American Dirt** by Jeanine Cummins (2020-03-09) | ★
+1. **Recursion** by Black Crouch (2020-04-05) | ★★★
+1. **The Phoenix Project** by Gene Kim | ★★★
+1. **Devoted** by Dean Koontz (2020-04-23) | ★★★
+1. **The Soul of an Entrepreneur** by David Sax (2020-05-04) | ★★★
+1. **Shakespeare for Squirrels** by Christopher Moore (2020-06-09) | ★★★
+1. **Network Effect (The Murderbot Diaries, #5)** by Martha Wells (2020-06-24) | ★★★★
+1. **Dark Matter** by Blake Crouch (2020-07-19) | ★★★★
+1. **The Permanent Portfolio** by Craig Rowland (2020-07-22) | ★★★
+1. **More Effective Agile** by Steve McConnell (2020-10-10) | ★★★
+1. **Futuristic Violence and Fancy Suits (Zoey Ashe, #1)** by David Wong (2020-12-27) | ★★★★
+
+
 
 
 
