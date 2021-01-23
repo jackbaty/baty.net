@@ -37,6 +37,15 @@ theme = "github.com/sunt-programator/CodeIT"
 	  url = "/about/"
 	  title = ""
 	  weight = 4
+    
+    [[menu.main]]
+    identifier = "stuff"
+    pre = ""
+    post = ""
+    name = "Stuff"
+    url = "/stuff/"
+    title = ""
+    weight = 5
 
 	[[menu.main]]
 	  identifier = "wiki"
@@ -45,7 +54,7 @@ theme = "github.com/sunt-programator/CodeIT"
 	  name = "Wiki"
 	  url = "https://rudimentarylathe.wiki"
 	  title = ""
-	  weight = 5
+	  weight = 6
 
 
 
