@@ -34,7 +34,7 @@ Here you'll find links to some of my other stuff. By "stuff" I mean pages, sites
 
 **Other**
 
-- [Books I've read](https://rudimentarylathe.org/#Books)
+- [Books I've read](/books/)
 - [Things I use](/lifestack)
 - [The origin of my avatar](/avatar/)
 - [Letterboxd](https://letterboxd.com/jackbaty) is where I track and rate the movies I watch
