@@ -1,0 +1,6 @@
+{
+  "editor.default_syntax" : "markdown",
+  "index.ignored_file_patterns" : [
+    "public\/*"
+  ]
+}

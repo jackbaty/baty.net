@@ -10,9 +10,10 @@ Here you'll find links to some of my other stuff. By "stuff" I mean pages, sites
 **Weblogs and other publishing experiments**
 
 - [baty.net](https://baty.net/) - You're soaking in it, since 2000
-- [rudimentarylathe.org](https://rudimentarylathe.wiki/) - My original wiki (using Tiddlywiki)
-- [copingmechanism.com](https://copingmechanism.com/) - My occasional blog, mostly about photography.
-- [baty.net/roam](https://baty.net/roam) - A public
+- [rudimentarylathe.org](https://rudimentarylathe.wiki/) - My "Daily Notes" wiki (using Tiddlywiki)
+- [copingmechanism.com](https://copingmechanism.com/) - Photography posts go here. Mostly.
+- [micro.baty.net](https://micro.baty.net/) - A microblog, run by the wonderful [micro.blog](https://micro.blog) service.
+- [baty.net/roam](https://baty.net/roam) - An intermittent, public
   [Roam](https://roamresearch.com) database used as a wiki and sort of microblog
 - [tilde.club/~jbaty](https://tilde.club/~jbaty) - because nostalgia is strong
   and Paul Ford is my hero
