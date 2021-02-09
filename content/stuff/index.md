@@ -15,6 +15,7 @@ Here you'll find links to some of my other stuff. By "stuff" I mean pages, sites
 - [micro.baty.net](https://micro.baty.net/) - A microblog, run by the wonderful [micro.blog](https://micro.blog) service.
 - [baty.net/roam](https://baty.net/roam) - An intermittent, public
   [Roam](https://roamresearch.com) database used as a wiki and sort of microblog
+- [The Lathe Newsletter](https://thelathe.substack.com) a newsletter nobody asked for.
 - [tilde.club/~jbaty](https://tilde.club/~jbaty) - because nostalgia is strong
   and Paul Ford is my hero
 
