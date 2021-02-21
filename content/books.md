@@ -465,6 +465,7 @@ I also try to keep my
 1. **Futuristic Violence and Fancy Suits (Zoey Ashe, #1)** by David Wong (2020-12-27) | ★★★★
 1. **The Mote in God's Eye** by Jerry Pournelle, Larry Niven (2021-01-22) | ★★★★
 1. **Zoey Punches the Future in the Dick** by David Wong (2021-01-27) | ****
+1. **Handmade: Creative Focus in the Age of Distraction** by Gary Rogowski (2021-02-19) | ****
 
 
 
