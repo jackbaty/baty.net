@@ -417,7 +417,7 @@ theme = "github.com/sunt-programator/CodeIT"
         outlined = false
       #  Commento comment config
       [params.page.comment.commento]
-        enable = true
+        enable = false
       #  Utterances comment config
       [params.page.comment.utterances]
         enable = false
@@ -476,7 +476,7 @@ theme = "github.com/sunt-programator/CodeIT"
 
   #  Analytics config
   [params.analytics]
-    enable = true
+    enable = false
     # Google Analytics
     [params.analytics.google]
       id = ""
