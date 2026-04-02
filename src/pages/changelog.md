@@ -10,6 +10,9 @@ Things change around here. This is a record of those changes[^start].
 <!-- leave blank line after opening tag -->
 <div class="compact">
 
+- `2026-04-02` No longer escape HTML in RSS feed
+- `2026-04-02` Add CSS hash so CSS doesn't cache after updates
+- `2026-04-02` Improved mobile layout
 - `2026-04-02` Added /tags/ page.
 - `2026-04-02` We're using Eleventy with a brand new custom template (phew!)
 - `2026-03-31` Added Umami back, hoping the bots have calmed down

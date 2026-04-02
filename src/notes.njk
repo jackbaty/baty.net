@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Notes
+subtitle: Quick notes, links, photos, quotes, etc.
 eleventyExcludeFromCollections: true
 pagination:
   data: collections.notes
@@ -11,6 +12,7 @@ permalink: "{% if pagination.pageNumber == 0 %}/notes/{% else %}/notes/page/{{ p
 <div class="container">
   <header class="page-header">
     <h1 class="page-title">Notes</h1>
+    {% if subtitle and pagination.pageNumber == 0 %}<p class="page-subtitle">{{ subtitle }}</p>{% endif %}
   </header>
   <section class="post-list">
     {% for item in items %}
