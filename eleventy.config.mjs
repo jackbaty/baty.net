@@ -87,7 +87,7 @@ export default function (eleventyConfig) {
       data: "_data",
     },
     templateFormats: ["njk", "md", "html"],
-    markdownTemplateEngine: "njk",
+    markdownTemplateEngine: false,
     htmlTemplateEngine: "njk",
   };
 }

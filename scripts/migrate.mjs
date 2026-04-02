@@ -1,6 +1,6 @@
 // scripts/migrate.mjs
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync, readdirSync, statSync } from "fs";
-import { join, basename, extname } from "path";
+import { join, dirname, basename, extname } from "path";
 import matter from "gray-matter";
 import TOML from "@iarna/toml";
 
@@ -26,10 +26,12 @@ function yearFromPath(filePath) {
 }
 
 function datePrefix(dateVal) {
+  // Use UTC methods so date-only values (stored as UTC midnight) don't shift by one day
+  // in negative-offset timezones (EDT, EST, etc.)
   const d = new Date(dateVal);
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const day = String(d.getDate()).padStart(2, "0");
+  const y = d.getUTCFullYear();
+  const m = String(d.getUTCMonth() + 1).padStart(2, "0");
+  const day = String(d.getUTCDate()).padStart(2, "0");
   return `${y}-${m}-${day}`;
 }
 
@@ -57,9 +59,24 @@ function updateImagePaths(content, year) {
   );
 }
 
+// Derive a slug from the file path when front matter doesn't provide one.
+// For page bundles (index.md), use the parent directory name.
+// For flat files, use the filename stem.
+// In both cases, strip a leading YYYY-MM-DD- or YYYYMMDD- date prefix.
+function slugFromPath(filePath) {
+  const name =
+    basename(filePath) === "index.md"
+      ? basename(dirname(filePath))
+      : basename(filePath, ".md");
+  return name.replace(/^\d{4}-\d{2}-\d{2}-/, "").replace(/^\d{8}[-_]/, "");
+}
+
 // ── Process a single .md file ──────────────────────────────────
 
 function processFile(srcPath, destTypeDir) {
+  // Skip Hugo section index files silently
+  if (basename(srcPath) === "_index.md") return;
+
   const raw = readFileSync(srcPath, "utf-8");
   const isToml = raw.startsWith("+++");
   const { data: fm, content } = matter(raw, {
@@ -67,13 +84,42 @@ function processFile(srcPath, destTypeDir) {
     ...(isToml ? { language: "toml", delimiters: "+++" } : {}),
   });
 
-  if (!fm.date || !fm.slug) {
-    console.warn(`  SKIP (no date/slug): ${srcPath}`);
+  // Normalize capital-D Date and capital-T Tags (older Hugo content)
+  if (!fm.date && fm.Date) { fm.date = fm.Date; delete fm.Date; }
+  if (!fm.tags && fm.Tags) { fm.tags = fm.Tags; delete fm.Tags; }
+
+  // Derive slug from filename when missing or empty
+  if (!fm.slug || (typeof fm.slug === "string" && !fm.slug.trim())) {
+    if (fm.url) {
+      // e.g. url: /2021/some-post/ → "some-post"
+      fm.slug = fm.url.replace(/\/$/, "").split("/").pop();
+    } else {
+      fm.slug = slugFromPath(srcPath);
+    }
+  }
+
+  // Sanitize: strip leading slashes and any path separators that would corrupt the output path
+  if (typeof fm.slug === "string") {
+    fm.slug = fm.slug.replace(/^\/+/, "").replace(/\//g, "-");
+  }
+
+  if (!fm.date) {
+    console.warn(`  SKIP (no date): ${srcPath}`);
+    return;
+  }
+  if (!fm.slug) {
+    console.warn(`  SKIP (no slug): ${srcPath}`);
     return;
   }
 
   const year = yearFromPath(srcPath);
   const prefix = datePrefix(fm.date);
+
+  // Replace non-unique placeholder slugs (e.g. Hugo's "today" convention for daily journals)
+  // with the ISO date, guaranteeing uniqueness.
+  if (fm.slug === "today" || fm.slug === "journal" || fm.slug === "note") {
+    fm.slug = prefix;
+  }
 
   // Normalize date to a JS Date so gray-matter serializes it as a proper YAML datetime
   fm.date = new Date(fm.date);
