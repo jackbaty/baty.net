@@ -1,6 +1,6 @@
 // scripts/migrate.mjs
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync, readdirSync, statSync } from "fs";
-import { join, dirname, basename, extname } from "path";
+import { join, basename, extname } from "path";
 import matter from "gray-matter";
 
 const HUGO = "hugo-examples";
