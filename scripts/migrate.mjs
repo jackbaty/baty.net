@@ -2,6 +2,7 @@
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync, readdirSync, statSync } from "fs";
 import { join, basename, extname } from "path";
 import matter from "gray-matter";
+import TOML from "@iarna/toml";
 
 const HUGO = "hugo-examples";
 const SRC = "src";
@@ -60,7 +61,11 @@ function updateImagePaths(content, year) {
 
 function processFile(srcPath, destTypeDir) {
   const raw = readFileSync(srcPath, "utf-8");
-  const { data: fm, content } = matter(raw);
+  const isToml = raw.startsWith("+++");
+  const { data: fm, content } = matter(raw, {
+    engines: { toml: TOML.parse.bind(TOML) },
+    ...(isToml ? { language: "toml", delimiters: "+++" } : {}),
+  });
 
   if (!fm.date || !fm.slug) {
     console.warn(`  SKIP (no date/slug): ${srcPath}`);
