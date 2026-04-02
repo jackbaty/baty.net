@@ -18,7 +18,7 @@ templateEngineOverride: njk
     <link href="{{ item.url | absoluteUrl(site.url) }}"/>
     <id>{{ item.url | absoluteUrl(site.url) }}</id>
     <updated>{{ item.date | dateToRfc3339 }}</updated>
-    <content type="html"><![CDATA[{{ item.templateContent }}]]></content>
+    <content type="html"><![CDATA[{{ item.templateContent | safe }}]]></content>
   </entry>
   {% endfor %}
 </feed>

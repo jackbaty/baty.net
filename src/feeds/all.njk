@@ -18,7 +18,7 @@ templateEngineOverride: njk
     <link href="{{ item.url | absoluteUrl(site.url) }}"/>
     <id>{{ item.url | absoluteUrl(site.url) }}</id>
     <updated>{{ item.date | dateToRfc3339 }}</updated>
-    <content type="html"><![CDATA[{% if item.data.cover and item.data.cover.src and not item.data.cover.hidden %}<figure><img src="{{ site.url }}{{ item.data.cover.src }}" alt="{{ item.data.cover.alt | default('') }}">{% if item.data.cover.caption %}<figcaption>{{ item.data.cover.caption }}</figcaption>{% endif %}</figure>{% endif %}{{ item.templateContent }}]]></content>
+    <content type="html"><![CDATA[{% if item.data.cover and item.data.cover.src and not item.data.cover.hidden %}<figure><img src="{{ site.url }}{{ item.data.cover.src }}" alt="{{ item.data.cover.alt | default('') }}">{% if item.data.cover.caption %}<figcaption>{{ item.data.cover.caption }}</figcaption>{% endif %}</figure>{% endif %}{{ item.templateContent | safe }}]]></content>
   </entry>
   {% endfor %}
 </feed>
