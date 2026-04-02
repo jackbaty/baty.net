@@ -6,7 +6,7 @@
   <title>{% if title %}{{ title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <link rel="me" href="baty.net" />
   <meta name="fediverse:creator" content="@jbaty@social.lol" />
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/styles.css?v={{ cssHash }}">
   <link rel="alternate" type="application/atom+xml" href="/index.xml" title="{{ site.title }}">
 
   {%- set ogImage = site.url + "/img/opengraph.jpg" %}

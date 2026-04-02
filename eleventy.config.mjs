@@ -2,6 +2,8 @@ import pluginRss from "@11ty/eleventy-plugin-rss";
 import markdownIt from "markdown-it";
 import markdownItFootnote from "markdown-it-footnote";
 import markdownItAttrs from "markdown-it-attrs";
+import { createHash } from "crypto";
+import { readFileSync } from "fs";
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -11,6 +13,12 @@ export default function (eleventyConfig) {
     .use(markdownItFootnote)
     .use(markdownItAttrs);
   eleventyConfig.setLibrary("md", md);
+
+  // ── Cache busting ─────────────────────────────────────────────
+  eleventyConfig.addGlobalData("cssHash", () => {
+    const css = readFileSync("src/styles.css");
+    return createHash("md5").update(css).digest("hex").slice(0, 8);
+  });
 
   // ── Plugins ──────────────────────────────────────────────────
   eleventyConfig.addPlugin(pluginRss);
