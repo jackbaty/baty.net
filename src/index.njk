@@ -1,0 +1,89 @@
+---
+layout: layouts/base.njk
+eleventyExcludeFromCollections: true
+pagination:
+  data: collections.everything
+  size: 20
+  alias: items
+permalink: "{% if pagination.pageNumber == 0 %}/{% else %}/page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+---
+<div class="container">
+  <section class="post-list" aria-label="Recent posts">
+
+    {% for item in items %}
+
+      {% if item.data.type == "post" %}
+        {# ── POST ─────────────────────────────────────── #}
+        <article class="post-card">
+          <div class="post-meta">
+            <time datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
+            {% for tag in item.data.tags %}
+              {% if tag and tag != "posts" and tag != "journal" and tag != "notes" %}
+                <a href="/tags/{{ tag | slug }}/" class="tag">{{ tag }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+          <h2 class="post-title">
+            <a href="{{ item.url }}">{{ item.data.title }}</a>
+          </h2>
+          {% if item.data.cover and item.data.cover.src %}
+            <figure class="post-cover">
+              <img src="{{ item.data.cover.src }}" alt="{{ item.data.cover.alt | default('') }}">
+              {% if item.data.cover.caption %}<figcaption>{{ item.data.cover.caption }}</figcaption>{% endif %}
+            </figure>
+          {% endif %}
+          {% if item.templateContent | hasMore %}
+            <div class="post-body">{{ item.templateContent | excerpt | safe }}</div>
+            <a href="{{ item.url }}" class="post-permalink">Read more →</a>
+          {% else %}
+            <div class="post-body">{{ item.templateContent | safe }}</div>
+            <a href="{{ item.url }}" class="post-permalink">Permalink #</a>
+          {% endif %}
+        </article>
+
+      {% elif item.data.type == "journal" %}
+        {# ── JOURNAL ───────────────────────────────────── #}
+        <article class="post-card">
+          <div class="post-meta">
+            <time datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
+          </div>
+          <h2 class="post-title">
+            <a href="{{ item.url }}">{{ item.data.title }}</a>
+          </h2>
+          {% if item.data.cover and item.data.cover.src %}
+            <figure class="post-cover">
+              <img src="{{ item.data.cover.src }}" alt="{{ item.data.cover.alt | default('') }}">
+              {% if item.data.cover.caption %}<figcaption>{{ item.data.cover.caption }}</figcaption>{% endif %}
+            </figure>
+          {% endif %}
+          <div class="post-body">{{ item.templateContent | safe }}</div>
+        </article>
+
+      {% elif item.data.type == "note" %}
+        {# ── NOTE ─────────────────────────────────────── #}
+        <article class="post-card post-card--note">
+          <div class="post-meta">
+            <time datetime="{{ item.date | htmlDateString }}">
+              <a href="{{ item.url }}">{{ item.date | readableDate }}</a>
+            </time>
+          </div>
+          <div class="post-body">{{ item.templateContent | safe }}</div>
+        </article>
+
+      {% endif %}
+
+    {% endfor %}
+
+  </section>
+
+  {% if pagination.pages.length > 1 %}
+    <nav class="pagination" aria-label="Page navigation">
+      {% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}" class="pagination-prev">← Newer</a>
+      {% endif %}
+      {% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}" class="pagination-next">Older →</a>
+      {% endif %}
+    </nav>
+  {% endif %}
+</div>
