@@ -42,6 +42,10 @@ journal:
 note:
 	./new-content.sh note
 
+deploy-quick: checkpoint build
+	@echo "\033[0;32mQuick deploying to {{TARGET}}...\033[0m"
+	rsync -v -rz --checksum --delete --no-perms {{PUBLIC_DIR}} {{SERVER_USER}}@{{SERVER_HOST}}:{{SERVER_DIR}}
+
 deploy: checkpoint build index
 	@echo "\033[0;32mDeploying updates to {{TARGET}}...\033[0m"
 	rsync -v -rz --checksum --delete --no-perms {{PUBLIC_DIR}} {{SERVER_USER}}@{{SERVER_HOST}}:{{SERVER_DIR}}
