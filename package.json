@@ -1,0 +1,23 @@
+{
+  "name": "baty.net",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "migrate": "node scripts/migrate.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5",
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "gray-matter": "^4.0.3"
+  }
+}
