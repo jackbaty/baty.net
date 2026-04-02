@@ -5,7 +5,7 @@ slug: removing-analytics-from-baty-net
 categories:
   - ''
 tags:
-  - Blogging
+  - blogging
   - ai
 summary: AI bots have made site analytics less useful
 ---

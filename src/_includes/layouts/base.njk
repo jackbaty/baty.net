@@ -4,20 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if title %}{{ title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="me" href="baty.net" />
+  <meta name="fediverse:creator" content="@jbaty@social.lol" />
   <link rel="stylesheet" href="/styles.css">
   <link rel="alternate" type="application/atom+xml" href="/index.xml" title="{{ site.title }}">
+
+  {%- set ogImage = site.url + "/img/opengraph.jpg" %}
+  {%- set ogCard = "summary" %}
+  {%- if cover and cover.src and not cover.hidden %}
+    {%- set ogImage = site.url + cover.src %}
+    {%- set ogCard = "summary_large_image" %}
+  {%- endif %}
+  {%- set ogDescription = summary if summary else site.description %}
+  {%- set ogType = "article" if (type == "post" or type == "journal" or type == "note") else "website" %}
+
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{{ ogDescription }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="{{ ogType }}">
+  <meta property="og:image" content="{{ ogImage }}">
+  <meta name="twitter:card" content="{{ ogCard }}">
+  <meta name="twitter:image" content="{{ ogImage }}">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="359f2763-4052-4b86-8940-a390d102d175"></script>
 </head>
-<body>
+<body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
 
   <header class="site-header">
     <div class="container container--wide">
-      <a href="/" class="site-title">{{ site.title }}</a>
+      <a href="/" class="site-title">
+        <img src="/img/avatar-round-100.png" alt="{{ site.author }}" class="site-avatar">
+        {{ site.title }}
+      </a>
       <nav aria-label="Site navigation">
         <ul class="site-nav">
-          <li><a href="/">Writing</a></li>
           <li><a href="/posts/">Posts</a></li>
+          <li><a href="/journal/">Journal</a></li>
+          <li><a href="/notes/">Notes</a></li>
           <li><a href="/about/">About</a></li>
-          <li><a href="/search/">Search</a></li>
+          <li><a href="/search/" aria-label="Search">🔍</a></li>
           <li><a href="/index.xml">RSS</a></li>
         </ul>
       </nav>
@@ -30,10 +55,27 @@
 
   <footer class="site-footer">
     <div class="container container--wide">
-      <p>© {{ site.title }}</p>
+      <p>© {{ site.author }} - Made with Eleventy</p>
       <p><a href="/about/">About</a> · <a href="/index.xml">RSS</a> · <a href="/search/">Search</a></p>
     </div>
   </footer>
 
+  <script>
+    document.querySelectorAll('figure img').forEach(img => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', () => {
+        const dialog = document.createElement('dialog');
+        dialog.className = 'lightbox';
+        const clone = img.cloneNode();
+        clone.removeAttribute('width');
+        clone.removeAttribute('height');
+        dialog.append(clone);
+        document.body.append(dialog);
+        dialog.showModal();
+        dialog.addEventListener('click', () => dialog.close());
+        dialog.addEventListener('close', () => dialog.remove());
+      });
+    });
+  </script>
 </body>
 </html>

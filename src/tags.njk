@@ -15,13 +15,12 @@ permalink: /tags/{{ tag | slug }}/
     {% set taggedItems = collections.everything | filterByTag(tag) %}
     {% for item in taggedItems %}
       <li>
-        <time datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
-        —
         {% if item.data.title %}
           <a href="{{ item.url }}">{{ item.data.title }}</a>
         {% else %}
           <a href="{{ item.url }}">Note — {{ item.date | readableDate }}</a>
         {% endif %}
+        <time datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
       </li>
     {% endfor %}
   </ul>

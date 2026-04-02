@@ -14,6 +14,8 @@ cover:
 
 Given my proclivity for tinkering with publishing tools, it should come as no surprise that I now have four active blogs and a wiki.
 
+<!-- more -->
+
 - **[baty.net](https://baty.net)** - The "main blog". Hugo. (You're soaking in it.)
 - **[daily.baty.net](https://daily.baty.net)** - Daily notes and short posts. Statically published using Tinderbox.
 - **[baty.blog](https://baty.blog)** - Possible replacement for baty.net. Pure Blog is so simple! (PHP with plain-text content files)

@@ -16,5 +16,8 @@ layout: layouts/base.njk
     <div class="post-body">
       {{ content | safe }}
     </div>
+    <footer class="reply-footer">
+      <a class="reply-email" href="mailto:{{ site.email }}?subject=[Baty.net] Re: {{ (title if title else ("Note — " + (date | readableDate))) | urlencode }}">✍️ Reply by email</a>
+    </footer>
   </article>
 </div>

@@ -7,8 +7,8 @@ date: 2026-01-21T09:55:00.000Z
 lastmod: 2026-01-21T11:16:17.000Z
 slug: blogging-with-org-mode-and-ox-hugo-again
 tags:
-  - Blogging
-  - Hugo
+  - blogging
+  - hugo
   - orgmode
 draft: false
 weight: 0

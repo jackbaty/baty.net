@@ -5,7 +5,7 @@ date: 2026-01-25T14:25:00.000Z
 lastmod: 2026-01-25T14:28:33.000Z
 slug: a-leica-q2-again
 tags:
-  - Photography
+  - photography
   - leica
 draft: false
 weight: 0

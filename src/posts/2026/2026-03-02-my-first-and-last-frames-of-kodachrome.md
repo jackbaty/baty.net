@@ -17,7 +17,10 @@ cover:
 
 In 1982, after I got my first real film camera (a Canon AE-1 Program), I shot Kodachrome for a short time. Here's the first frame with the new camera. It's a flower in our back yard.
 
+<!-- more -->
+
 <figure><img src="/img/2026/flower.webp" alt="Close up image of a pink flower"><figcaption>Flower (1982). Canon AE-1 Program / Kodachrome</figcaption></figure>
+
 
 I later switched to using color negative film, and only used Kodachrome occasionally. I don't remember why. Probably because "normal" film was cheaper and prints were 2 for 1 or something.
 

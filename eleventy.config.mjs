@@ -1,8 +1,17 @@
 import pluginRss from "@11ty/eleventy-plugin-rss";
+import markdownIt from "markdown-it";
+import markdownItFootnote from "markdown-it-footnote";
+import markdownItAttrs from "markdown-it-attrs";
 
 const isProd = process.env.NODE_ENV === "production";
 
 export default function (eleventyConfig) {
+  // ── Markdown ─────────────────────────────────────────────────
+  const md = markdownIt({ html: true })
+    .use(markdownItFootnote)
+    .use(markdownItAttrs);
+  eleventyConfig.setLibrary("md", md);
+
   // ── Plugins ──────────────────────────────────────────────────
   eleventyConfig.addPlugin(pluginRss);
 

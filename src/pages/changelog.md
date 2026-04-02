@@ -1,5 +1,6 @@
 ---
 title: Changelog
+subtitle: A running list of notable changes to this site.
 date: 2024-01-16T11:40:37.000Z
 permalink: /changelog/
 ---

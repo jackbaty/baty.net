@@ -4,7 +4,7 @@ date: 2026-01-24T14:10:00.000Z
 lastmod: 2026-01-24T14:10:41.000Z
 slug: linux-and-or-macos
 tags:
-  - Linux
+  - linux
 draft: false
 weight: 0
 ---

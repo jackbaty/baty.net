@@ -4,7 +4,7 @@ date: 2026-02-03T16:50:00.000Z
 lastmod: 2026-02-03T16:50:47.000Z
 slug: test-from-fresh-fedora-install
 tags:
-  - Linux
+  - linux
 draft: false
 weight: 0
 ---

@@ -4,7 +4,7 @@ date: 2026-02-27T10:54:13.000Z
 slug: 20260227-sontag-on-types-of-people
 categories:
   - Note
-Tags:
+tags:
   - Quote
 ---
 

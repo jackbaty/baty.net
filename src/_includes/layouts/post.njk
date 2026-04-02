@@ -13,6 +13,7 @@ layout: layouts/base.njk
         {% endfor %}
       </div>
       <h1 class="post-title">{{ title }}</h1>
+      {% if subtitle %}<p class="page-subtitle">{{ subtitle }}</p>{% endif %}
       {% if cover and cover.src and not cover.hidden %}
         <figure class="post-cover">
           <img src="{{ cover.src }}" alt="{{ cover.alt | default('') }}">
@@ -23,5 +24,8 @@ layout: layouts/base.njk
     <div class="post-body">
       {{ content | safe }}
     </div>
+    <footer class="reply-footer">
+      <a class="reply-email" href="mailto:{{ site.email }}?subject=[Baty.net] Re: {{ title | urlencode }}">✍️ Reply by email</a>
+    </footer>
   </article>
 </div>

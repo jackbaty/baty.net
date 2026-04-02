@@ -8,7 +8,7 @@ permalink: /nope/
 
 Here is a list of things I don't want to do, in no particular order. I'll update it as needed.
 
-<figure><img src="/img/2026/jack-tongue.png" alt=""></figure>
+<figure><img src="/img/jack-tongue.png" alt=""></figure>
 
 **I don't want to:**
 
