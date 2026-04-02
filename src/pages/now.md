@@ -1,16 +1,15 @@
 ---
 title: Now
+subtitle: A few things I'm doing at the moment.
 permalink: /now/
 ---
 
-# What I'm doing Now
+Here are a few things I'm doing or learning or playing with these days
 
-Here are a few things I'm doing or learning or playing with these days[^thx]
+Updated on **Thursday, April 2, 2026**.[^thx]
 
-Updated on Wednesday, February 4, 2026.
+- Recreating a couple of my blogs using [Eleventy](https://www.11ty.dev).
 
-- Switching between macOS and Linux.
-- Testing [Sublime Text](https://www.sublimetext.com/) and [Kate](https://kate-editor.org/) on Linux since I can't have BBEdit there.
 
 ## Watched Recently
 
@@ -18,7 +17,7 @@ Updated on Wednesday, February 4, 2026.
 
 ## Reading
 
-- _Dungeon Crawler Carl_ by Matt Dinniman
+- _I'm starting to worry about this black box of doom_ by Jason Pargin
 - _The Python Years_ by Michael Palin
 - *A Manifesto for World Revolution* from Adbusters ([link](https://subscribe.adbusters.org/products/a-manifesto-for-world-revolution?ref=brilliantcrank.com))
 

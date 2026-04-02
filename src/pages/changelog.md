@@ -10,6 +10,8 @@ Things change around here. This is a record of those changes[^start].
 <!-- leave blank line after opening tag -->
 <div class="compact">
 
+- `2026-04-02` Added /tags/ page.
+- `2026-04-02` We're using Eleventy with a brand new custom template (phew!)
 - `2026-03-31` Added Umami back, hoping the bots have calmed down
 - `2026-03-31` Excluded journal entries from [/archives](/archives/) and renamed nav item to "Posts"
 - `2026-01-21` Added [/notes](/notes) to menu and changed note formatting    

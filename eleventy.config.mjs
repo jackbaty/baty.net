@@ -74,8 +74,6 @@ export default function (eleventyConfig) {
   });
   eleventyConfig.addCollection("tagList", (api) => {
     const system = new Set(["posts", "journal", "notes"]);
-    // Deduplicate by slug to avoid permalink collisions from mixed-case tags.
-    // Keep the first-seen form of each slug.
     const bySlug = new Map();
     api.getAll().forEach((item) => {
       (item.data.tags || []).forEach((tag) => {
@@ -85,6 +83,22 @@ export default function (eleventyConfig) {
       });
     });
     return [...bySlug.values()].sort();
+  });
+  eleventyConfig.addCollection("tagCounts", (api) => {
+    const system = new Set(["posts", "journal", "notes"]);
+    const counts = new Map();
+    const canonical = new Map();
+    api.getAll().forEach((item) => {
+      (item.data.tags || []).forEach((tag) => {
+        if (!tag || system.has(tag)) return;
+        const slug = tag.toLowerCase().replace(/\s+/g, "-");
+        if (!canonical.has(slug)) canonical.set(slug, tag);
+        counts.set(slug, (counts.get(slug) || 0) + 1);
+      });
+    });
+    return [...counts.entries()]
+      .map(([slug, count]) => ({ tag: canonical.get(slug), slug, count }))
+      .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag));
   });
 
   // ── Config ────────────────────────────────────────────────────

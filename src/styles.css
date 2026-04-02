@@ -588,6 +588,29 @@ body.home main {
 
 .reply-email:hover { color: var(--color-accent); }
 
+/* ─── Tag cloud ─────────────────────────────────────────────────── */
+.tag-cloud {
+  list-style: none;
+  padding: 0;
+  columns: 3;
+  column-gap: var(--space-xl);
+}
+.tag-cloud li {
+  padding-block: var(--space-xs);
+  break-inside: avoid;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-sm);
+}
+.tag-cloud a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+.tag-cloud a:hover { color: var(--color-accent); }
+.tag-count {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
 /* ─── Archive list ───────────────────────────────────────────────── */
 .post-archive {
   list-style: none;
