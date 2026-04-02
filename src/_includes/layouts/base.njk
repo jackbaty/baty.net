@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" href="/index.xml" title="{{ site.title }}">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container container--wide">
+      <a href="/" class="site-title">{{ site.title }}</a>
+      <nav aria-label="Site navigation">
+        <ul class="site-nav">
+          <li><a href="/">Writing</a></li>
+          <li><a href="/posts/">Posts</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/search/">Search</a></li>
+          <li><a href="/index.xml">RSS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container container--wide">
+      <p>© {{ site.title }}</p>
+      <p><a href="/about/">About</a> · <a href="/index.xml">RSS</a> · <a href="/search/">Search</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
