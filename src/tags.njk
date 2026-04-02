@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+eleventyExcludeFromCollections: true
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag | slug }}/
+---
+<div class="container">
+  <header class="page-header">
+    <h1 class="page-title">{{ tag }}</h1>
+  </header>
+  <ul class="post-archive">
+    {% set taggedItems = collections.everything | filterByTag(tag) %}
+    {% for item in taggedItems %}
+      <li>
+        <time datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
+        —
+        {% if item.data.title %}
+          <a href="{{ item.url }}">{{ item.data.title }}</a>
+        {% else %}
+          <a href="{{ item.url }}">Note — {{ item.date | readableDate }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
