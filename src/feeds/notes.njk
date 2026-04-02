@@ -1,0 +1,24 @@
+---
+permalink: /notes/index.xml
+templateEngineOverride: njk
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title }} — Notes</title>
+  <link href="{{ site.url }}/notes/index.xml" rel="self"/>
+  <link href="{{ site.url }}/notes/"/>
+  {% if collections.notes.length %}
+  <updated>{{ collections.notes[0].date | dateToRfc3339 }}</updated>
+  {% endif %}
+  <id>{{ site.url }}/notes/</id>
+  <author><name>{{ site.author }}</name></author>
+  {% for item in collections.notes | head(20) %}
+  <entry>
+    <title>{% if item.data.title %}{{ item.data.title | escape }}{% else %}Note — {{ item.date | readableDate }}{% endif %}</title>
+    <link href="{{ item.url | absoluteUrl(site.url) }}"/>
+    <id>{{ item.url | absoluteUrl(site.url) }}</id>
+    <updated>{{ item.date | dateToRfc3339 }}</updated>
+    <content type="html"><![CDATA[{{ item.templateContent }}]]></content>
+  </entry>
+  {% endfor %}
+</feed>
