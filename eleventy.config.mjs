@@ -65,13 +65,17 @@ export default function (eleventyConfig) {
   });
   eleventyConfig.addCollection("tagList", (api) => {
     const system = new Set(["posts", "journal", "notes"]);
-    const tags = new Set();
+    // Deduplicate by slug to avoid permalink collisions from mixed-case tags.
+    // Keep the first-seen form of each slug.
+    const bySlug = new Map();
     api.getAll().forEach((item) => {
       (item.data.tags || []).forEach((tag) => {
-        if (tag && !system.has(tag)) tags.add(tag);
+        if (!tag || system.has(tag)) return;
+        const slug = tag.toLowerCase().replace(/\s+/g, "-");
+        if (!bySlug.has(slug)) bySlug.set(slug, tag);
       });
     });
-    return [...tags].sort();
+    return [...bySlug.values()].sort();
   });
 
   // ── Config ────────────────────────────────────────────────────

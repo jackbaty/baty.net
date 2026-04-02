@@ -75,6 +75,9 @@ function processFile(srcPath, destTypeDir) {
   const year = yearFromPath(srcPath);
   const prefix = datePrefix(fm.date);
 
+  // Normalize date to a JS Date so gray-matter serializes it as a proper YAML datetime
+  fm.date = new Date(fm.date);
+
   // Front matter transforms
   if (fm.cover) {
     if (fm.cover.image) {
