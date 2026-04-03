@@ -24,6 +24,10 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:type" content="{{ ogType }}">
   <meta property="og:image" content="{{ ogImage }}">
+  {% if ogCard == "summary" %}
+  <meta property="og:image:width" content="400">
+  <meta property="og:image:height" content="400">
+  {% endif %}
   <meta name="twitter:card" content="{{ ogCard }}">
   <meta name="twitter:image" content="{{ ogImage }}">
   <script defer src="https://cloud.umami.is/script.js" data-website-id="359f2763-4052-4b86-8940-a390d102d175"></script>
