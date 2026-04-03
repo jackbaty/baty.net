@@ -94,7 +94,7 @@ Here's the software that I currently use on a regular basis
 
 I use a basement bathroom as a makeshift darkroom.
 
-- [**Leitz Focomat v35**](http://www.bonavolta.ch/hobby/en/photo/v35.htm) – 35mm auto-focus enlarger. Solid and reliable. It is a fantastic device.
+- [**Leitz Focomat v35**](https://www.bonavolta.ch/hobby/en/photo/v35.htm) – 35mm auto-focus enlarger. Solid and reliable. It is a fantastic device.
 - [**Leitz Focomat IIc**](https://www.l-camera-forum.com/leica-wiki.en/index.php/Focomat_IIc) – Manufactured from 1956–1983, the Focomat IIc is a giant, over-engineered marvel of an enlarger. I bought mine as a fixer-upper from Craigslist and I still don't have it working completely. Getting there, though.
 - [**Beseler 45MXT**](https://www.bhphotovideo.com/c/product/3991-REG/Beseler_8227_45MXT_Enlarger_Chassis_Only.html) – This is for printing medium and large format negatives. Mine is a little janky but works great overall. It's in a separate room, so is rarely used.
 
@@ -114,7 +114,7 @@ I use a basement bathroom as a makeshift darkroom.
 
 ## Other Every Day Carry
 
-- [**Tag Heuer Aquaracer Automatic watch**](https://www.tagheuer.com/en-us/watches/aquaracer-calibre-5-automatic-watch-43-mm-way2010-ba0927) – No batteries, beautiful, and good to 300 meters in the water – because that's handy right?
+- **Tag Heuer Aquaracer Automatic watch** – No batteries, beautiful, and good to 300 meters in the water – because that's handy right?
 - **Apple Watch (Series 10)** – The health stuff and proper notifications are handy. I wish I could wear this _and_ the Tag.
 - **Casio G-Shock(s)** - I have 2 of them. They're great and I can beat them senseless without worry.
 - [**Kobo Libra 2 eReader**](https://us.kobobooks.com/collections/ereaders/products/kobo-libra-2) - Replaced the Kindle Oasis and older Kobo Forma. ePub and Libby, baby!
