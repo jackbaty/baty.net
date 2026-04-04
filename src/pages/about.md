@@ -1,6 +1,6 @@
 ---
-title: About
-subtitle: About Jack Baty — who writes about photography, technology, and tools.
+title: About Baty.net
+subtitle: "A blog by Jack Baty: photography, technology, and tools."
 permalink: /about/
 ---
 
@@ -42,5 +42,3 @@ I have a tendency to tinker with various blogging tools, and sometimes I can't d
 - [Glass](https://glass.photo/jbaty) Recent favorite photos
 
 Baty.net is built using [Hugo](https://getkirby.com/) with a fork of the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. All content is 100% LLM-free.
-
-

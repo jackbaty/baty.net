@@ -9,6 +9,8 @@ Here are a few things I'm doing or learning or playing with these days
 Updated on **Thursday, April 2, 2026**.[^thx]
 
 - Recreating a couple of my blogs using [Eleventy](https://www.11ty.dev).
+- Learning to use Cursor for code editing
+- Working with friends on a new product
 
 
 ## Watched Recently

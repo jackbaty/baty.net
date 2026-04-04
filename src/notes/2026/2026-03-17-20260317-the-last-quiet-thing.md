@@ -4,6 +4,7 @@ date: 2026-03-17T19:17:00.000Z
 slug: 20260317-the-last-quiet-thing
 categories:
   - Note
+tags: [quote]
 ---
 
 
