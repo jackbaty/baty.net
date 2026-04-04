@@ -111,6 +111,7 @@ cmd_journal() {
 title: "$JOURNAL_TITLE"
 date: $NOW
 slug: $slug
+tags: []
 summary: ""
 cover:
   src: ""
@@ -149,6 +150,7 @@ cmd_note() {
 title: "$title"
 date: $NOW
 slug: $slug
+tags: []
 ---
 EOF
   else
@@ -156,6 +158,7 @@ EOF
 ---
 date: $NOW
 slug: $slug
+tags: []
 ---
 EOF
   fi

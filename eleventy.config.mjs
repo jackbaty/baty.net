@@ -49,9 +49,12 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("hasMore", (content) =>
     content.includes("<!-- more -->")
   );
-  eleventyConfig.addFilter("filterByTag", (items, tag) =>
-    (items || []).filter((item) => (item.data.tags || []).includes(tag))
-  );
+  eleventyConfig.addFilter("filterByTag", (items, tag) => {
+    const lower = tag.toLowerCase();
+    return (items || []).filter((item) =>
+      (item.data.tags || []).some((t) => t.toLowerCase() === lower)
+    );
+  });
   eleventyConfig.addFilter("head", (array, n) =>
     (array || []).slice(0, n)
   );
