@@ -46,7 +46,7 @@ Here's the software that I currently use on a regular basis
 
 ## Photography
 
-**Cameras I use most frequently**
+### Cameras I use most frequently
 
 - **Leica MP (Black Paint)** - My dream camera. I bought it new in 2021 as my "forever" camera. It might be the most beautiful thing I own.
 - **Leica Q2** - World's best "Point and Shoot" digital camera.
@@ -57,7 +57,7 @@ Here's the software that I currently use on a regular basis
 - **Ricoh GRIII** (Digital) - Pocketable, high-quality (APS-C), and fun to use snapshot camera.
 - **Fujifilm X100** - The original Fuji X camera. It's 12 years old now, but I still use it, even though the rear buttons suck and it's "only" 12 MP.
 
-**Cameras I use occasionally**
+### Cameras I use occasionally
 
 -   **Leica IIIf** – Barnack! Mine was made in 1946.
 -   **Hasselblad 500C/M** - The Hasselblad V series cameras are iconic, beautiful, and superbly engineered. They also produce wonderful images, which is why they are my favorite all-around cameras.
@@ -67,7 +67,7 @@ Here's the software that I currently use on a regular basis
 -   **Olympus OM–1n** – 35mm film camera. Tiny and jewel-like. Amazing viewfinder.
 -   **Olympus OM–2n** – 35mm film camera
 
-**Retired cameras**
+### Retired cameras
 
 - **Olympus Stylus Epic** – Compact 35mm film camera. I love these little things. Both of mine have light leaks and are unreliable. I refuse to pay what the internet wants for a new one.
 -   **Canon AE–1 Program** – 35mm Film SLR. This is the first "real" camera I ever owned.

@@ -26,19 +26,25 @@ I have a tendency to tinker with various blogging tools, and sometimes I can't d
 
 - [feeds.baty.net](https://feeds.baty.net)
 
-**Blogs**
+### Blogs
 
 - This site, baty.net has an [RSS feed](https://baty.net/index.xml).
 - [daily.baty.net](https://daily.baty.net) for daily notes. It's like a journal. There's an [RSS feed](https://daily.baty.net/feed).
 - [copingmechanism.com](https://copingmechanism.com) - A Ghost blog to play with (includes ActivityPub)
 
-**The Wiki (TiddlyWiki)**
+### The Wiki (TiddlyWiki)
 
 - [RudimentaryLathe](https://rudimentarylathe.org) - I started fresh this year.
 
-**Photography**
+### Photography
 
 - [Flickr](https://flickr.com/photos/jbaty) for 20+ years of photography
 - [Glass](https://glass.photo/jbaty) Recent favorite photos
 
-Baty.net is built using [Hugo](https://getkirby.com/) with a fork of the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. All content is 100% LLM-free.
+### The Stack
+
+Baty.net is built using [Eleventy](https://www.11ty.dev/) using a custom theme.
+
+Served via [Caddy](https://caddyserver.com) on a small [Hetzner](https://hetzner.com) VPS.
+
+All content is 100% LLM-free.
