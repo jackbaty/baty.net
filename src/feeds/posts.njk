@@ -11,14 +11,14 @@ templateEngineOverride: njk
   <updated>{{ collections.posts[0].date | dateToRfc3339 }}</updated>
   {% endif %}
   <id>{{ site.url }}/posts/</id>
-  <author><name>{{ site.author }}</name></author>
+  <author><name>{{ site.author }}</name><email>jack@baty.net</email></author>
   {% for item in collections.posts | head(20) %}
   <entry>
     <title>{{ item.data.title | escape }}</title>
     <link href="{{ item.url | absoluteUrl(site.url) }}"/>
     <id>{{ item.url | absoluteUrl(site.url) }}</id>
     <updated>{{ item.date | dateToRfc3339 }}</updated>
-    <content type="html"><![CDATA[{% if item.data.cover and item.data.cover.src and not item.data.cover.hidden %}<figure><img src="{{ site.url }}{{ item.data.cover.src }}" alt="{{ item.data.cover.alt | default('') }}">{% if item.data.cover.caption %}<figcaption>{{ item.data.cover.caption }}</figcaption>{% endif %}</figure>{% endif %}{{ item.templateContent | safe }}]]></content>
+    <content type="html"><![CDATA[{% if item.data.cover and item.data.cover.src and not item.data.cover.hidden %}<figure><img src="{{ site.url }}{{ item.data.cover.src }}" alt="{{ item.data.cover.alt | default('') }}">{% if item.data.cover.caption %}<figcaption>{{ item.data.cover.caption }}</figcaption>{% endif %}</figure>{% endif %}{{ item.templateContent | safe }}<p><a href="mailto:{{ site.email }}?subject=[Baty.net] Re: {{ item.data.title | urlencode }}">✍️ Reply by email</a></p>]]></content>
   </entry>
   {% endfor %}
 </feed>

@@ -11,14 +11,14 @@ templateEngineOverride: njk
   <updated>{{ collections.notes[0].date | dateToRfc3339 }}</updated>
   {% endif %}
   <id>{{ site.url }}/notes/</id>
-  <author><name>{{ site.author }}</name></author>
+  <author><name>{{ site.author }}</name><email>jack@baty.net</email></author>
   {% for item in collections.notes | head(20) %}
   <entry>
     <title>{% if item.data.title %}{{ item.data.title | escape }}{% else %}Note — {{ item.date | readableDate }}{% endif %}</title>
     <link href="{{ item.url | absoluteUrl(site.url) }}"/>
     <id>{{ item.url | absoluteUrl(site.url) }}</id>
     <updated>{{ item.date | dateToRfc3339 }}</updated>
-    <content type="html"><![CDATA[{{ item.templateContent | safe }}]]></content>
+    <content type="html"><![CDATA[{{ item.templateContent | safe }}<p><a href="mailto:{{ site.email }}?subject=[Baty.net] Re: {{ (item.data.title if item.data.title else ("Note — " + (item.date | readableDate))) | urlencode }}">✍️ Reply by email</a></p>]]></content>
   </entry>
   {% endfor %}
 </feed>
