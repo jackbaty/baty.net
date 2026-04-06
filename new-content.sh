@@ -37,9 +37,9 @@ maybe_open() {
   local file="$1"
   if [ "$NO_OPEN" -eq 1 ]; then return; fi
   if [ -n "${EDITOR:-}" ]; then
-    printf "Open in %s? [y/N] " "$EDITOR"
+    printf "Open in %s? [Y/n] " "$EDITOR"
     read -r answer
-    if [[ "${answer:-}" =~ ^[Yy]$ ]]; then
+    if [[ "${answer:-Y}" =~ ^[Yy]$ ]]; then
       eval "$EDITOR" '"$file"'
     fi
   fi
