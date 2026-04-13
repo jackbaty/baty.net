@@ -7,13 +7,10 @@ eleventyExcludeFromCollections: true
 <div class="container">
   <header class="page-header">
     <h1 class="page-title">Search</h1>
-  </header>
-  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-  <script src="/pagefind/pagefind-ui.js"></script>
+  </header> 
+    <link href="/pagefind/pagefind-component-ui.css" rel="stylesheet">
+    <script src="/pagefind/pagefind-component-ui.js" type="module"></script>
   <div id="search"></div>
-  <script>
-    window.addEventListener('DOMContentLoaded', function () {
-      new PagefindUI({ element: '#search', showSubResults: true });
-    });
-  </script>
+  <pagefind-searchbox></pagefind-searchbox>
 </div>
+
