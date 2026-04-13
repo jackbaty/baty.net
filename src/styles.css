@@ -166,7 +166,7 @@ main {
   padding-block: var(--space-2xl);
 }
 body.home main {
-  padding-block-start: var(--space-md);
+  padding-block-start: var(--space-2xl);
 }
 
 /* ─── Shared: meta, tags, back link ─────────────────────────────── */
