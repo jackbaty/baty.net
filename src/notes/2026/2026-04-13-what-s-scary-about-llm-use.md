@@ -5,4 +5,4 @@ slug: what-s-scary-about-llm-use
 tags: [AI]
 ---
 
- The thing that scares me about how good LLMs are getting, and how accessible they become, is that before long, everything is gonna look good, sound good. is gonna be well written, and the world is gonna be boring as hell.
+The thing that scares me about how good LLMs are getting, is that before long, everything is going to look good, and sound good. Everything will be well-written. The world is gonna be boring as hell.
