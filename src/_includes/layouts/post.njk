@@ -21,6 +21,9 @@ layout: layouts/base.njk
         </figure>
       {% endif %}
     </header>
+    {% if thumb and not (cover and cover.src) %}
+      <img src="{{ thumb }}" alt="" class="post-thumb" aria-hidden="true">
+    {% endif %}
     <div class="post-body">
       {{ content | safe }}
     </div>

@@ -3,6 +3,7 @@ title: "macOS for now"
 date: 2026-04-05T12:44:03-0400
 slug: macos-for-now
 tags: ["Linux","macOS"]
+thumb: /img/small/happy-mac.png
 ---
 
 I've been using macOS exclusively for about a week and I'm a little embarrassed to admit how smooth things have felt. Not because of macOS specifically, but because I don't need to worry about keeping things set up and synced on Linux, too. I've been worrying about it a lot lately. More than that, I've spent a dizzying amount of time on it and taking a break from all that has been a relief.

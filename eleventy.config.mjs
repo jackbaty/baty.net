@@ -42,6 +42,11 @@ export default function (eleventyConfig) {
       year: "numeric", month: "long", day: "numeric",
     })
   );
+  eleventyConfig.addFilter("shortDate", (date) =>
+    new Date(date).toLocaleDateString("en-US", {
+      month: "short", day: "numeric",
+    })
+  );
   eleventyConfig.addFilter("excerpt", (content) => {
     const idx = content.indexOf("<!-- more -->");
     return idx !== -1 ? content.slice(0, idx) : content;
