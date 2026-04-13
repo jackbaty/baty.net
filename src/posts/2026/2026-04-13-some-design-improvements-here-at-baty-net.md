@@ -73,5 +73,11 @@ The page does what it needs to do, but it makes no choices about how the three c
 / _end of Claude Code's critique_
 
 ----
+Then it listed what needed fixing and how we'd fix it. We decided to do the following:
+
+- Welcome header: removed entirely
+- Social links: relocated to footer (permanent, visible on all pages)
+- Footer: restructured to 3-column layout (copyright / social icons / nav links)
+- Notes: compact card — smaller meta (0.72rem, 70% opacity), smaller body (font-size-sm), narrower measure (52ch), tighter separator (space-md vs space-xl)
 
 I mean, there's no way I could do this on my own. I wouldn't even try. And I would not have hired a professional to do it. It's just my blog. The world is different now. It's equal parts exhilerating and scary.
