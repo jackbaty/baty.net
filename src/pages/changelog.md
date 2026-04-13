@@ -10,6 +10,7 @@ Things change around here. This is a record of those changes[^start].
 <!-- leave blank line after opening tag -->
 <div class="compact">
 
+- `2026-04-07` Updated Pagefind search to 1.5.0
 - `2026-04-06` RSS (Atom) feed contains Reply by email link. Added email element to author section (h/t [Daniel Pietzsch](https://danielpietzsch.com/))
 - `2026-04-04` Tag matching is now case-insensitive; notes and journals include `tags:` in front matter template
 - `2026-04-03` Added og:image:width/height for default OG image; cover images use summary_large_image card type

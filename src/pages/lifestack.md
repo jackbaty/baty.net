@@ -1,11 +1,12 @@
 ---
 title: My Lifestack
+subtitle: A list of things that I use to manage my life or that I simply enjoy using.
 date: 2023-05-05T00:00:00.000Z
 slug: lifestack
 permalink: /lifestack/
 ---
 
-A list of things that I use to manage my life or that I simply enjoy using.
+
 
 Last updated **Thursday, February 5, 2026**.
 
