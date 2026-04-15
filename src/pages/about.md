@@ -4,7 +4,7 @@ subtitle: "A blog by Jack Baty: photography, technology, and tools."
 permalink: /about/
 ---
 
-I used to help build apps as co-founder of Fusionary Media (1995-2000). Now I mostly just take photographs and write on my blogs.
+I co-founded Fusionary Media (1995-2000). Now I mostly just take photographs and write on my blogs.
 
 
 * * *
@@ -47,4 +47,4 @@ Baty.net is built using [Eleventy](https://www.11ty.dev/) using a custom theme.
 
 Served via [Caddy](https://caddyserver.com) on a small [Hetzner](https://hetzner.com) VPS.
 
-All content is 100% LLM-free.
+All writing here is by me alone and is 100% LLM-free.

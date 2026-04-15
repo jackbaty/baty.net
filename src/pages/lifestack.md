@@ -6,17 +6,15 @@ slug: lifestack
 permalink: /lifestack/
 ---
 
-
-
-Last updated **Thursday, February 5, 2026**.
+Last updated **Wednesday, April 15, 2026**.
 
 ![My desk](/img/2026/desk-layout.jpg)
 
 ## Computer Hardware
 
-- **[Beelink Ser8](https://www.bee-link.com/products/beelink-ser8-8845hs)** - My desktop computer. Runs Fedora/KDE
+- **Apple Mac Mini M2 (Max)** - A solid, capable, inconspicuous desktop computer. Currently what I use most.
+- **[Beelink Ser8](https://www.bee-link.com/products/beelink-ser8-8845hs)** - A tiny, quiet, and capable desktop computer. Runs Fedora/KDE
 - **[Framework 13](https://frame.work/laptop13)** - Running Fedora/Gnome
-- **Apple Mac Mini M2 (Max)** - A solid, capable, inconspicuous desktop computer. Used for photo processing.
 - **Apple MacBook Air M4** – Powerful and tiny. Great hardware. Not using it much lately.
 - **Apple iPad Pro 10.9 (2021)** – I am not an iPad person, but this is a great "get-away" device. The Magic Keyboard makes it usable.
 - **iPhone 15 Pro** – I've finally gone with a "full-size" phone. No more Minis. It's fine.
@@ -32,6 +30,7 @@ Last updated **Thursday, February 5, 2026**.
 Here's the software that I currently use on a regular basis
 
 - **[Emacs](https://www.gnu.org/software/emacs/)** and  **[Org mode](https://orgmode.org/)** – Notes, emails, RSS feeds, journaling, most everything.
+- **[Obsidian](https://obsidian.md)** - This has been sneaking it's way into my primary notetaking role.
 - **[Zen Browser](https://zen-browser.app/)** - Web browser. Nicer than Firefox, but I still miss Arc.
 - **[Ghostty](https://ghostty.org/)** – Apple's built-in Terminal is fine, but I'm running with Ghostty because it's new and fun.
  
@@ -78,9 +77,9 @@ Here's the software that I currently use on a regular basis
 
 ## Software for photography
 
-- **[Darktable](https://www.darktable.org/)** - Raw file editor. Open source. Weird, but powerful.
+- **[Capture One](https://captureone.com)** - Primary RAW editor.
+- **[Darktable](https://www.darktable.org/)** - Raw file editor when using Linux. Open source. Weird, but powerful.
 - **[Immich](https://immich.app/)** – My library of final edits
-- ~~**Adobe Lightroom** – Raw file editor and library. Once a while I still use Capture One.~~ Make one for Linux and we'll talk.
 
 ## Photo Hardware
 
