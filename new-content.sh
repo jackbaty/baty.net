@@ -11,7 +11,8 @@ set -euo pipefail
 NO_OPEN=0
 TITLE=""
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-EDITOR="open -a typora"
+#EDITOR="open -a typora"
+#EDITOR='open -a "iA Writer"'
 
 # ── Date parts ────────────────────────────────────────────────────
 YEAR=$(date +%Y)
