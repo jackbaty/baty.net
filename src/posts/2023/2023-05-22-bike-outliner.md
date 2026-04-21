@@ -7,7 +7,7 @@ tags:
 slug: bike-outliner
 ---
 
-![Bike Outliner](/img/small/bike.png#floatright)
+<figure class="float-right"><img src="/img/small/bike.png" alt="Bike Outliner"></figure>
 
 The other day I wrote this:
 

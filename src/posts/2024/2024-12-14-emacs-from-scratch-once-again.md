@@ -15,7 +15,7 @@ cover:
   caption: null
 ---
 
-<img src="/img/small/emacs.png#floatright">
+<figure class="float-right"><img src="/img/small/emacs.png" alt=""></figure>
 
 
 I've been happily using [Doom Emacs](https://github.com/doomemacs/doomemacs) again, but I missed the feeling of having built things myself. I mean, if I wanted everything done for me, I could just use Obsidian, right?

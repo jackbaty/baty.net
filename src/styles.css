@@ -529,6 +529,24 @@ body.home main {
   }
 }
 
+/* ─── Float right (image with text wrap) ────────────────────────── */
+figure.float-right {
+  float: right;
+  max-width: 250px;
+  margin: 0 0 var(--space-md) var(--space-xl);
+}
+
+@media (max-width: 600px) {
+  figure.float-right {
+    float: none;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto var(--space-md);
+  }
+}
+
+.clear { clear: both; }
+
 /* ─── Cover images ────────────────────────────────────────────────── */
 .post-cover {
   margin-top: var(--space-sm);

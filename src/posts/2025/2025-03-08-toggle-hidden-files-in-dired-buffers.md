@@ -11,7 +11,7 @@ summary: >-
   files. I wanted the same thing in Dired mode.
 ---
 
-![emacs](/img/small/emacs.png#floatright)
+<figure class="float-right"><img src="/img/small/emacs.png" alt="emacs"></figure>
 
 The more time I spend in Emacs' Dired mode, the more I want to tweak things. I [wrote about a few of these](/posts/2024/09/tweaks-to-my-dired-config-in-emacs/) last year.
 

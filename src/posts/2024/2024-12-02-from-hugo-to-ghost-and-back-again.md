@@ -15,7 +15,7 @@ cover:
 ---
 
 
-<img src="/img/small/carousel.webp#floatright">
+<figure class="float-right"><img src="/img/small/carousel.webp" alt=""></figure>
 I can hear you all giggling. Ha ha very funny, Jack changed his blog again. I get it. Most normal people don't change blogging engines every month or two.
 
 If I were a different person, Ghost would be the answer. It's fast, looks good, and has everything I might need for publishing a nice blog. But I'm me, and I get twitchy when content is "trapped" in Ghost. I understand that I can always export some unreadable JSON and finagle it from there, but I can't get comfortable with it. It's not just the JSON, but the complex markup Ghost uses for content. Yuck. If only I could ignore it.
