@@ -12,7 +12,7 @@ NO_OPEN=0
 TITLE=""
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 #EDITOR="open -a typora"
-#EDITOR='open -a "iA Writer"'
+EDITOR="open -a Paper "
 
 # ── Date parts ────────────────────────────────────────────────────
 YEAR=$(date +%Y)
