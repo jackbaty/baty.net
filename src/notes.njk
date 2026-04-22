@@ -22,7 +22,12 @@ permalink: "{% if pagination.pageNumber == 0 %}/notes/{% else %}/notes/page/{{ p
             <a href="{{ item.url }}">{{ item.date | readableDate }}</a>
           </time>
         </div>
-        <div class="post-body">{{ item.templateContent | safe }}</div>
+        <div class="post-body-wrap">
+          {% if item.data.thumb %}
+            <img src="{{ item.data.thumb }}" alt="" class="post-thumb" aria-hidden="true">
+          {% endif %}
+          <div class="post-body">{{ item.templateContent | safe }}</div>
+        </div>
       </article>
     {% endfor %}
   </section>

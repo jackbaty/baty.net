@@ -515,8 +515,10 @@ body.home main {
   width: 100px;
   height: 100px;
   object-fit: cover;
-  border-radius: var(--radius-sm);
+  /* 
+border-radius: var(--radius-sm);
   border: 1px solid var(--color-border);
+ */
   margin: 0 0 var(--space-md) var(--space-lg);
   shape-outside: border-box;
 }
