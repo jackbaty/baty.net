@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-04-28T00:00:00Z",
+  "title": "Design System: baty.net",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(0.98 0.003 80)",
+        "tonalRamp": ["#1a1a18", "#2e2e2b", "#484743", "#6b6b68", "#9a9994", "#c8c7c1", "#e5e5e3", "#fafaf8"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface (above-paper)",
+        "canonical": "oklch(1 0 0)",
+        "tonalRamp": ["#1e1e1c", "#34332f", "#504e49", "#737167", "#a39f95", "#cfccc4", "#ededeb", "#ffffff"]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(0.92 0.003 80)",
+        "tonalRamp": ["#2e2e2b", "#3f3f3c", "#5b5a57", "#827f7b", "#a8a6a2", "#c8c7c4", "#e5e5e3", "#f4f4f2"]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Soft Black",
+        "canonical": "oklch(0.18 0.005 80)",
+        "tonalRamp": ["#1a1a18", "#2e2e2c", "#454541", "#615f5a", "#7f7d77", "#a6a4a0", "#cfcecb", "#ededeb"]
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Quiet Gray",
+        "canonical": "oklch(0.5 0.005 80)",
+        "tonalRamp": ["#2e2e2c", "#454541", "#5b5a57", "#6b6b68", "#888884", "#a6a4a0", "#c4c2be", "#e5e5e3"]
+      },
+      "code-bg": {
+        "role": "neutral",
+        "displayName": "Code Wash",
+        "canonical": "oklch(0.96 0.002 250)",
+        "tonalRamp": ["#252523", "#363633", "#4d4d49", "#6e6e69", "#9a9a93", "#c2c2bb", "#e2e2de", "#f3f4f6"]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Inked Amber",
+        "canonical": "oklch(0.52 0.12 65)",
+        "tonalRamp": [
+          "oklch(0.18 0.04 65)",
+          "oklch(0.28 0.07 65)",
+          "oklch(0.38 0.10 65)",
+          "oklch(0.46 0.12 65)",
+          "oklch(0.52 0.12 65)",
+          "oklch(0.62 0.13 65)",
+          "oklch(0.75 0.13 70)",
+          "oklch(0.88 0.07 70)"
+        ]
+      },
+      "accent-soft": {
+        "role": "primary",
+        "displayName": "Amber Tint",
+        "canonical": "oklch(0.96 0.03 70)",
+        "tonalRamp": [
+          "oklch(0.22 0.04 65)",
+          "oklch(0.32 0.05 65)",
+          "oklch(0.46 0.06 70)",
+          "oklch(0.62 0.05 70)",
+          "oklch(0.78 0.04 70)",
+          "oklch(0.88 0.035 70)",
+          "oklch(0.96 0.03 70)",
+          "oklch(0.99 0.012 70)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display":  { "displayName": "Display",  "purpose": "Single-post title in a post header. One per page." },
+      "headline": { "displayName": "Headline", "purpose": "Page titles on archive and tag pages." },
+      "title":    { "displayName": "Title",    "purpose": "Post-card titles in lists; site title in the header." },
+      "subhead":  { "displayName": "Subhead",  "purpose": "h3 inside body prose. The serif→sans switch is the section break." },
+      "body":     { "displayName": "Body",     "purpose": "All long-form prose. Capped at 68ch via --measure." },
+      "meta":     { "displayName": "Meta",     "purpose": "Dates, byline, captions, callout body, archive timestamps." },
+      "label":    { "displayName": "Label",    "purpose": "Site nav, page-label kicker, post-nav prev/next labels, archive year header. Always uppercase, letter-spaced." },
+      "mono":     { "displayName": "Mono",     "purpose": "Inline code and code blocks." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "ease-quick",   "value": "0.15s ease",  "purpose": "Color/opacity transitions on links, nav, hover states." },
+      { "name": "scroll-smooth", "value": "smooth",     "purpose": "html { scroll-behavior: smooth } — anchor jumps glide." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "600px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Inline uppercase amber pill for taxonomy. The only filled chip in the system.",
+      "html": "<a class=\"ds-tag\" href=\"#\">Film</a>",
+      "css": ".ds-tag { display: inline-block; font-family: 'Hanken Grotesk', system-ui, sans-serif; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; padding: 2px 0.5rem; border-radius: 4px; background: oklch(0.96 0.03 70); color: oklch(0.52 0.12 65); text-decoration: none; }"
+    },
+    {
+      "name": "Site Nav Link",
+      "kind": "nav",
+      "refersTo": "site-nav-link",
+      "description": "Uppercase grotesque label, muted at rest, accent on hover.",
+      "html": "<nav class=\"ds-sitenav\"><a href=\"#\">Posts</a><a href=\"#\" aria-current=\"page\">Journal</a><a href=\"#\">Notes</a></nav>",
+      "css": ".ds-sitenav { display: flex; gap: 3rem; justify-content: center; } .ds-sitenav a { font-family: 'Hanken Grotesk', system-ui, sans-serif; font-size: 0.7rem; font-weight: 500; color: #6b6b68; text-decoration: none; text-transform: uppercase; letter-spacing: 0.1em; transition: color 0.15s; } .ds-sitenav a:hover { color: oklch(0.52 0.12 65); } .ds-sitenav a[aria-current=\"page\"] { color: #1a1a18; font-weight: 600; }"
+    },
+    {
+      "name": "Post Card with Star Separator",
+      "kind": "card",
+      "refersTo": "post-card",
+      "description": "The signature list item. A serif title and meta, separated from the next entry by a hairline crossed by an amber ✦.",
+      "html": "<article class=\"ds-postcard\"><h2 class=\"ds-postcard__title\"><a href=\"#\">A walk with the Leica</a></h2><div class=\"ds-postcard__meta\">April 24, 2026</div><p class=\"ds-postcard__excerpt\">First roll through the M6 since November. The light was thin but kind.</p></article><article class=\"ds-postcard ds-postcard--next\"><h2 class=\"ds-postcard__title\"><a href=\"#\">Notes from the darkroom</a></h2><div class=\"ds-postcard__meta\">April 22, 2026</div><p class=\"ds-postcard__excerpt\">Mixing fresh D-76 always feels like a small ceremony.</p></article>",
+      "css": ".ds-postcard { display: grid; gap: 0.5rem; padding-block: 0; } .ds-postcard--next { padding-top: 3rem; position: relative; } .ds-postcard--next::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: #e5e5e3; transform: translateY(-50%); } .ds-postcard--next::before { content: '\\2726'; position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); padding: 0 0.75rem; background-color: #fafaf8; color: oklch(0.52 0.12 65); font-size: 0.55rem; line-height: 1; z-index: 1; } .ds-postcard__title { font-family: Vollkorn, Georgia, serif; font-size: 1.75rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; margin: 0; } .ds-postcard__title a { color: #1a1a18; text-decoration: none; transition: color 0.15s; } .ds-postcard__title a:hover { color: oklch(0.52 0.12 65); } .ds-postcard__meta { font-family: 'Hanken Grotesk', system-ui, sans-serif; font-size: 0.875rem; color: #6b6b68; } .ds-postcard__excerpt { font-family: Vollkorn, Georgia, serif; font-size: 1.125rem; line-height: 1.6; color: #6b6b68; max-width: 68ch; margin: 0; }"
+    },
+    {
+      "name": "Callout",
+      "kind": "card",
+      "refersTo": "callout",
+      "description": "Quiet amber-tinted aside. Used sparingly for context the prose can't carry.",
+      "html": "<aside class=\"ds-callout\"><p>Posts in this archive predate the current redesign and may render imperfectly.</p></aside>",
+      "css": ".ds-callout { background: oklch(0.96 0.03 70); border: 1px solid color-mix(in srgb, oklch(0.52 0.12 65) 25%, transparent); border-radius: 8px; padding: 2rem; font-family: 'Hanken Grotesk', system-ui, sans-serif; font-size: 0.875rem; line-height: 1.5; color: #1a1a18; max-width: 68ch; margin: 0; } .ds-callout p { margin: 0; }"
+    },
+    {
+      "name": "Blockquote with Floating Quote Glyph",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Italic Vollkorn pulled-in quote with a single oversized opening quote mark in faded accent at the left edge — the only ornament inside body prose.",
+      "html": "<blockquote class=\"ds-blockquote\"><p>The quieter the room, the better the photograph.</p><cite>— Found note, undated</cite></blockquote>",
+      "css": ".ds-blockquote { position: relative; padding-left: 3rem; color: #6b6b68; font-style: italic; max-width: 68ch; font-family: Vollkorn, Georgia, serif; font-size: 1.125rem; line-height: 1.6; margin: 0; } .ds-blockquote::before { content: '\\201C'; font-family: Vollkorn, Georgia, serif; font-size: 2.5rem; line-height: 1; color: oklch(0.52 0.12 65); opacity: 0.35; position: absolute; left: 0; top: -0.1rem; } .ds-blockquote cite { display: block; margin-top: 0.5rem; font-size: 0.875rem; font-style: normal; font-family: 'Hanken Grotesk', system-ui, sans-serif; }"
+    },
+    {
+      "name": "Post Nav (prev/next tiles)",
+      "kind": "nav",
+      "refersTo": "post-nav-tile",
+      "description": "Two bordered tiles for previous/next post. Hairline border shifts to accent on hover.",
+      "html": "<nav class=\"ds-postnav\"><a href=\"#\" class=\"ds-postnav__tile\"><span class=\"ds-postnav__label\">Previous</span><span class=\"ds-postnav__title\">Notes from the darkroom</span></a><a href=\"#\" class=\"ds-postnav__tile ds-postnav__tile--next\"><span class=\"ds-postnav__label\">Next</span><span class=\"ds-postnav__title\">A walk with the Leica</span></a></nav>",
+      "css": ".ds-postnav { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; font-family: 'Hanken Grotesk', system-ui, sans-serif; font-size: 0.875rem; } .ds-postnav__tile { text-decoration: none; padding: 1rem; border: 1px solid #e5e5e3; border-radius: 8px; display: grid; gap: 0.25rem; transition: border-color 0.15s; } .ds-postnav__tile:hover { border-color: oklch(0.52 0.12 65); } .ds-postnav__tile--next { text-align: right; } .ds-postnav__label { color: #6b6b68; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; } .ds-postnav__title { color: #1a1a18; font-weight: 600; line-height: 1.35; }"
+    },
+    {
+      "name": "Status Block",
+      "kind": "card",
+      "refersTo": "status",
+      "description": "Compact metadata strip at the foot of an entry. Small uppercase keys, plain values.",
+      "html": "<div class=\"ds-status\"><ul><li><strong>Camera</strong> Leica M6</li><li><strong>Film</strong> HP5+ at 400</li><li><strong>Developer</strong> D-76 1+1</li></ul></div>",
+      "css": ".ds-status { font-family: 'Hanken Grotesk', system-ui, sans-serif; font-size: 0.875rem; color: #6b6b68; background: oklch(0.96 0.03 70); border: 1px solid color-mix(in oklch, oklch(0.52 0.12 65) 15%, transparent); border-radius: 4px; padding: 0.25rem 1rem; } .ds-status ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 3px; } .ds-status li { line-height: 1.5; } .ds-status strong { font-weight: 600; color: #1a1a18; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; margin-right: 0.5rem; }"
+    },
+    {
+      "name": "Inline Code",
+      "kind": "custom",
+      "refersTo": "inline-code",
+      "description": "Mono inside prose, with a quiet wash background.",
+      "html": "<p class=\"ds-prose\">Run <code class=\"ds-code\">npx eleventy --serve</code> in the project root.</p>",
+      "css": ".ds-prose { font-family: Vollkorn, Georgia, serif; font-size: 1.125rem; line-height: 1.6; color: #1a1a18; margin: 0; } .ds-code { font-family: 'SF Mono', 'Fira Code', Consolas, monospace; font-size: 0.875em; background: #f3f4f6; padding: 2px 5px; border-radius: 4px; color: #1a1a18; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Printed Journal",
+    "overview": "baty.net is set like a small-format hardcover: warm off-white pages, a bookish serif body, deliberate margins, and a single hand-mixed accent the color of old ink. The system is light-first; the dark mode is a faithful night-table version of the same book, never a separate identity. Decoration is rationed — when a flourish appears (a ✦ between entries, a floating quote glyph, an amber tag) it is the only flourish on the page. The site rejects the visual vocabulary of tech blogs, SaaS marketing, and AI-generated dashboards.",
+    "keyCharacteristics": [
+      "Light-first, warm off-white (#fafaf8) — never #fff.",
+      "One accent in the warm-amber/honey family, used on ≤10% of any page.",
+      "Bookish serif body (Vollkorn) paired with a clean grotesque (Hanken Grotesk) for chrome and metadata.",
+      "Generous reading measure (68ch) with a 1.6 line-height.",
+      "A single ornament — ✦ — separates list items where a hairline would feel mechanical."
+    ],
+    "rules": [
+      { "name": "The 10% Accent Rule", "body": "The amber accent is rationed. It appears on links, the active hover state, the post-card ✦ separator, the floating quote glyph, and the tag pill. Adding it to a sixth surface dilutes it.", "section": "colors" },
+      { "name": "The No-Pure-White, No-Pure-Black Rule", "body": "#fff and #000 are forbidden. Every neutral is tinted toward the paper hue. Use the tokens.", "section": "colors" },
+      { "name": "The Tinted-Neutrals Rule", "body": "Borders and dividers are 1px in --color-border, sometimes mixed at 50% via color-mix. Never a colored stripe.", "section": "colors" },
+      { "name": "The Single-Serif Rule", "body": "All long-form prose is Vollkorn — display, body, blockquote, captions inside posts. Hanken Grotesk is for chrome only.", "section": "typography" },
+      { "name": "The 68ch Rule", "body": "Body paragraphs and figures cap at var(--measure) = 68ch. Notes use a tighter 60ch. Wider than 75ch breaks the bookish rhythm.", "section": "typography" },
+      { "name": "The Uppercase-Label Rule", "body": "Anything in uppercase uses Hanken Grotesk, weight 600, letter-spacing 0.1em (or 0.05em for the smallest variants). Uppercase serif is forbidden.", "section": "typography" },
+      { "name": "The Flat-Paper Rule", "body": "Surfaces sit on the page, never above it. If you reach for box-shadow, you're solving the wrong problem — try a hairline, a tint, or more space.", "section": "elevation" },
+      { "name": "The Hairline-Only Rule", "body": "All borders are 1px. Sometimes mixed at 50% transparency via color-mix. Never a colored accent stripe.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep #fff out of the source. Page bg is #fafaf8; surface is white only when an element must sit above the page.",
+      "Do ration the amber accent. If it's already on the link, the tag, the ✦, the quote glyph, and the hover state — the sixth use is one too many.",
+      "Do use Vollkorn for prose and Hanken Grotesk for chrome. Never mix them inside a single paragraph.",
+      "Do cap reading measure at 68ch via var(--measure) (or 60ch for note variants).",
+      "Do use the ✦ separator pattern between list items where a hairline alone would feel mechanical.",
+      "Do prefer a hairline (1px solid var(--color-border)) or a tint (--color-accent-soft) over any new structural device.",
+      "Do float small thumbnails right at 100×100, with shape-outside: border-box. On ≤600px viewports they break out of the float and center.",
+      "Do test every change in dark mode via prefers-color-scheme. Light is primary; dark must match the same restraint."
+    ],
+    "donts": [
+      "Don't use #fff or #000 anywhere. Every neutral is tinted toward the paper hue.",
+      "Don't introduce a second accent. The system has one. If a state needs distinction, use weight, size, or muted color — not a new hue.",
+      "Don't use gradients. Anywhere. Not in backgrounds, not in text, not on borders.",
+      "Don't use side-stripe borders (border-left greater than 1px as a colored accent). The blockquote uses an absolutely-positioned glyph for the same purpose — copy that pattern.",
+      "Don't use box-shadow. The system is flat. If you reach for elevation, the answer is more whitespace, a hairline, or a tint.",
+      "Don't use glassmorphism, blur backdrops, or any frosted surface effect.",
+      "Don't build hero-metric tiles, identical-card grids, or icon-headline-text card walls.",
+      "Don't build anything that reads as a tech blog, SaaS landing page, or AI made this.",
+      "Don't use uppercase serif. Uppercase is always Hanken Grotesk with letter-spacing 0.05em–0.1em.",
+      "Don't use em dashes in copy. Use commas, colons, semicolons, or parentheses.",
+      "Don't add a CSS framework, utility-class layer, or component runtime. The single styles.css is the system.",
+      "Don't let chrome compete with photographs. When an image is present in a post, surrounding elements step back."
+    ]
+  }
+}
