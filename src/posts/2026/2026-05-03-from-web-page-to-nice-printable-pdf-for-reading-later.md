@@ -38,6 +38,8 @@ published: {{published|date:"YYYY-MM-DD"}}
 {{content}}
 ```
 
+A copy of the template for importing directly into the web clipper is [here](https://static.baty.net/code/obsidia-web-clipper-for-pandoc.json)
+
 The magic comes from Pandoc. I convert the Markdown to PDF via LaTeX. The `default.latex` template that ships with Pandoc works well. It uses all sorts of variables that can be passed in via YAML front matter or via a defaults file. I only just learned about the default file option, so that cleaned up the front matter dramatically. Here's my ~/.pandoc/defaults/article.yaml defaults file:
 
 ```yaml
