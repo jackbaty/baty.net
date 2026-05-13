@@ -10,6 +10,7 @@ Every note-taking app handles file attachments differently. Most of them do it p
 
 The way I have Emacs configured, dragging a file into an open buffer window will prompt me with a few options, the one I use being "Attach file". This then copies the file into a subfolder of whatever directory is configured as the `org-attach-directory`. This subfolder is named based on any ID property set in the Org file. This means I end up with a directory tree that looks like this:
 
+```
     5f
     6d
     ├── ace650-30fb-4157-9e6e-a259f6b4b75e
@@ -24,6 +25,7 @@ The way I have Emacs configured, dragging a file into an open buffer window will
         └── Community Darkroom Project.tbx
     6c
     6e
+```
 
 You can see why someone might avoid doing this. Without the source .org file, all bets are off. I don't lose the source .org file, is all. Also, I try to name my files in a reasonable way, so using Spotlight as a fallback is feasible.
 
@@ -35,6 +37,7 @@ It's hard to describe, but here's a quick rundown of how it works.
 
 Instead of a uuid, I use a date string derived from the current time (e.g. "20241125T143431"). This is stored as a string in an "Identifier" attribute as soon as I create a new note in my LifeBook.tbx file. Here's the parts that do it...
 
+```
     // Set some basic attributes in the new note, including the $Identifier
     $Date|=date("today");$Prototype="pJournalEntry";
     $Identifier|=fNoteIdentifier($Date);
@@ -43,6 +46,7 @@ Instead of a uuid, I use a date string derived from the current time (e.g. "2024
     	var:string id = vDate.format("yM0DThmms");
     	return id;
     };
+```
 
 Here's what that part of the note looks like after dragging a file onto the File attribute.
 
@@ -50,6 +54,7 @@ Here's what that part of the note looks like after dragging a file onto the File
 
 Once the File attribute has a value, I run a Stamp named "Attach".
 
+```
     if($File){
     if($Identifier==""){$Identifier=fNoteIdentifier($Date)};
     var:string vSourceFilePath=$File.substr(1); // remove tilde
@@ -68,17 +73,20 @@ Once the File attribute has a value, I run a Stamp named "Attach".
     	var:string vDestDir=vAttachmentDir+"/"+$Date.format(y)+"/"+$Identifier;
     	return vDestDir;
     }
+```
 
 Without going too far into the weeds, this stamp runs a shell command that creates the appropriate target directory and copies the $File into it. It then sets $HasAttachments to true and finally, sets the original $File attribute to the attachment directory. This last bit means I can click on that little folder icon and it will open the folder in Finder.
 
 I'm using a simpler file tree using subfolders based on the year in the Identifier:
 
+```
     .
     └── 2024
         ├── 20241125T121015
         │   └── USPS-OM-2n.pdf
         └── 20241125T143431
             └── Donation Receipt — Thank you from the Internet Archive.eml
+```
 
 It probably seems more complicated than it is. The whole process is 
 
