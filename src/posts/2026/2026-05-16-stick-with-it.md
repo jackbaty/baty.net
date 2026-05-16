@@ -23,10 +23,9 @@ A side effect of all this causes me to say, "Where did I write/post/record/put t
 
 I must think that switching things up regularly is worth the trouble, since I keep doing it.
 
-Honestly, I often wish I wasn't like this. My ideal self is someone who started using Emacs in 1995 and has never tried anything else. I wish I was still posting on a Wordpress blog from 2005 that never changes. I wish I kept my original Leica M camera, used it for everything all the time, and never considered others. I wish I'd have used the same form of journaling since high school.
+Honestly, I often wish I wasn't like this. My ideal self is someone who started using Emacs in 1995 and has never tried anything else. I wish I was still posting on a Wordpress blog from 2005 that never changes. I wish I kept my original Leica M camera, used it for everything all the time, and never considered others. I wish I'd have used the same form of journaling since high 
 
-  * [ ] But, I _am_ like this, and haven't done any of the things my ideal self wants. Who knows what's next!?
-
+But, I _am_ like this, and haven't done any of the things my ideal self wants. Like sticking with it.
 
 
 
