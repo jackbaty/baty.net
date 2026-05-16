@@ -44,7 +44,7 @@ typography:
     lineHeight: 1.2
     letterSpacing: "-0.02em"
   body:
-    fontFamily: "Vollkorn, Georgia, 'Times New Roman', serif"
+    fontFamily: "Instrument Sans, system-ui, sans-serif"
     fontSize: "1.125rem"
     fontWeight: 400
     lineHeight: 1.6
@@ -130,14 +130,14 @@ components:
 
 **Creative North Star: "The Printed Journal"**
 
-baty.net is set like a small-format hardcover: warm off-white pages, a bookish serif body, deliberate margins, and a single hand-mixed accent the color of old ink. The system is light-first; the dark mode is a faithful night-table version of the same book, never a separate identity. Decoration is rationed — when a flourish appears (a `✦` between entries, a floating quote glyph, an amber tag) it is the only flourish on the page.
+baty.net is set like a small-format hardcover: warm off-white pages, a humanist sans-serif body under serif titles, deliberate margins, and a single hand-mixed accent the color of old ink. The system is light-first; the dark mode is a faithful night-table version of the same book, never a separate identity. Decoration is rationed — when a flourish appears (a `✦` between entries, a floating quote glyph, an amber tag) it is the only flourish on the page.
 
 The site rejects the visual vocabulary of tech blogs, SaaS marketing, and AI-generated dashboards. There are no gradients, no glass surfaces, no hero-metric tiles, no card grids of identical icon-and-heading boxes, no neon-on-black. Photographs and prose are the content; everything else steps aside.
 
 **Key Characteristics:**
 - Light-first, warm off-white (`#fafaf8`) — never `#fff`.
 - One accent in the warm-amber/honey family, used on ≤10% of any page.
-- Bookish serif body (Vollkorn) paired with a clean grotesque (Hanken Grotesk) for chrome and metadata.
+- Humanist sans-serif body (Instrument Sans) paired with a clean grotesque (Hanken Grotesk) for chrome and metadata; Vollkorn reserved for titles and display.
 - Generous reading measure (`68ch`) with a 1.6 line-height.
 - A single ornament — `✦` — separates list items where a hairline would feel mechanical.
 
@@ -174,11 +174,11 @@ A warm off-white surface with a soft black for text and one warm-amber accent. T
 ## 3. Typography
 
 **Display Font:** Vollkorn (with Georgia, "Times New Roman", serif fallback)
-**Body Font:** Vollkorn — same family. The system uses a single serif from display down to body, varying weight and size for hierarchy.
+**Body Font:** Instrument Sans (with system-ui fallback) — humanist sans-serif for prose. Warm and readable without the tech-blog associations of Inter or similar.
 **UI / Label Font:** Hanken Grotesk (with system-ui, -apple-system fallback) — used only for chrome: navigation, metadata, captions, labels, callout body, code/pre.
 **Mono Font:** SF Mono → Fira Code → Consolas.
 
-**Character:** The pairing reads as a well-set book: a warm bookish serif on the page, a quiet grotesque in the margins (page numbers, captions, running heads). The serif never appears in navigation; the grotesque never appears in body prose.
+**Character:** Vollkorn commands the titles and display; Instrument Sans carries the prose; Hanken Grotesk handles the margins (navigation, metadata, captions). The serif never appears in chrome; the grotesque never appears in body prose.
 
 ### Hierarchy
 
@@ -187,13 +187,13 @@ A warm off-white surface with a soft black for text and one warm-amber accent. T
 - **Title** (Vollkorn 700, `1.75rem`, line-height 1.2, letter-spacing `-0.01em`): Post-card titles in lists; site title in the header.
 - **Subhead** (Hanken Grotesk 700, `1.25rem`, letter-spacing `-0.02em`): `h3` inside body prose. The shift from Vollkorn body to Hanken subhead is the section break — no underline, no rule, no color.
 - **H4** (Hanken Grotesk 700, `1.125rem`, **uppercase**, letter-spacing `0.04em`): Smallest body heading. Treated as a label, not a heading.
-- **Body** (Vollkorn 400, `1.125rem`, line-height 1.6): Prose. Capped at `68ch` via `--measure`. Mobile drops to `1rem`.
+- **Body** (Instrument Sans 400, `1.125rem`, line-height 1.6): Prose. Capped at `68ch` via `--measure`. Mobile drops to `1rem`.
 - **Meta** (Hanken Grotesk 400, `0.875rem`, muted): Dates, byline, archive timestamps, captions, callout body, tag-cloud links.
 - **Label** (Hanken Grotesk 600, `0.7rem`, **uppercase**, letter-spacing `0.1em`): Site nav, page-label kicker, post-nav prev/next labels, archive year header.
 
 ### Named Rules
 
-**The Single-Serif Rule.** All long-form prose is Vollkorn — display, body, blockquote, captions inside posts. Hanken Grotesk is for chrome only.
+**The Serif-for-Titles Rule.** Vollkorn is for display, headlines, titles, post-card headings, archive links, and the blockquote ornament glyph. Instrument Sans carries body prose and blockquote text. Hanken Grotesk is for chrome only.
 
 **The 68ch Rule.** Body paragraphs and figures cap at `var(--measure)` = `68ch`. Notes use a tighter `60ch`. Wider than 75ch breaks the bookish rhythm.
 
