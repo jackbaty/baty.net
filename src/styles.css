@@ -600,14 +600,18 @@ figure.float-right {
 }
 
 .read-more {
+  display: block;
+  margin-top: var(--space-sm);
   font-family: var(--font-sans);
   font-size: var(--font-size-sm);
   color: var(--color-accent);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
   font-weight: 500;
 }
 
-.read-more:hover { text-decoration: underline; }
+.read-more:hover { text-decoration-thickness: 2px; }
 
 /* Subtle end-of-post permalink, used on full-post index pages */
 .post-permalink {
