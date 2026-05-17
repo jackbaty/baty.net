@@ -10,6 +10,7 @@ Things change around here. This is a record of those changes[^start].
 <!-- leave blank line after opening tag -->
 <div class="compact">
 
+- `2026-05-17` Improved home page hierarchy and spacing
 - `2026-05-16` Changed body font to sans-serif (Instrument Sans)
 - `2026-05-06` Some cleanup. Add author metadata
 - `2026-04-07` Updated Pagefind search to 1.5.0
