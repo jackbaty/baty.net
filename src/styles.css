@@ -205,6 +205,24 @@ body.home main {
   text-decoration: none;
 }
 
+.post-meta .tag {
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  font-size: inherit;
+  color: var(--color-accent);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* Pull meta toward the title above it, push it away from body below */
+.post-card:not(.post-card--note) .post-meta {
+  margin-top: -0.3rem;
+  margin-bottom: var(--space-xs);
+  padding-left: 0.2rem;
+}
+
 .back-link {
   display: inline-flex;
   align-items: center;
@@ -457,7 +475,7 @@ body.home main {
   padding: 0 0.75rem;
   background-color: var(--color-bg);
   color: var(--color-accent);
-  font-size: 0.55rem;
+  font-size: 0.7rem;
   line-height: 1;
   z-index: 1;
 }
@@ -482,20 +500,12 @@ body.home main {
   gap: var(--space-xs);
 }
 
-.post-card--note + .post-card,
-.post-card + .post-card--note,
-.post-card--note + .post-card--note {
-  padding-top: var(--space-md);
-}
 
 .post-card--note .post-meta {
   font-size: 0.72rem;
   opacity: 0.7;
 }
 
-.post-card--note {
-  padding-left: var(--space-lg);
-}
 
 .post-card--note .post-body {
   max-width: 60ch;
