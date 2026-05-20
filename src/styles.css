@@ -313,6 +313,11 @@ body.home main {
   top: -0.1rem;
 }
 
+.post-body blockquote p + p,
+.page-body blockquote p + p {
+  margin-top: var(--space-sm);
+}
+
 .post-body blockquote cite,
 .page-body blockquote cite {
   display: block;
