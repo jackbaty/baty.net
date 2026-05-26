@@ -19,7 +19,7 @@ templateEngineOverride: njk
     <link href="{{ absolutePostUrl }}"/>
     <id>{{ absolutePostUrl }}</id>
     <updated>{{ item.date | dateToRfc3339 }}</updated>
-    <content type="html"><![CDATA[{{ item.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}<p><a href="mailto:{{ site.email }}?subject=[Baty.net] Re: {{ (item.data.title if item.data.title else ("Note — " + (item.date | readableDate))) | urlencode }}">✍️ Reply by email</a></p>]]></content>
+    <content type="html"><![CDATA[{{ item.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}]]></content>
   </entry>
   {% endfor %}
 </feed>
