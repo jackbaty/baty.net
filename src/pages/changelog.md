@@ -10,6 +10,7 @@ Things change around here. This is a record of those changes[^start].
 <!-- leave blank line after opening tag -->
 <div class="compact">
 
+- `2026-05-26` RSS feeds now use absolute URLs for images in post content
 - `2026-05-17` Improved home page hierarchy and spacing
 - `2026-05-16` Changed body font to sans-serif (Instrument Sans)
 - `2026-05-06` Some cleanup. Add author metadata
