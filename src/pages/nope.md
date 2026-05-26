@@ -43,6 +43,7 @@ I collect these throughout each year and record them when they reach a threshold
 - Trump
 - Slop
 - Smol
+- Cringe
 
 ### 2025
 
